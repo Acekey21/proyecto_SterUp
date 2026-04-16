@@ -1,10 +1,10 @@
 services:
   - type: web
     name: stepup-sneakers
-    env: php
+    runtime: php
     plan: free
     buildCommand: ""
     startCommand: apache2-foreground
     envVars:
       - key: DOCUMENT_ROOT
-        value: nova # Cambia esto si la carpeta se llama distinto
+        value: nova
