@@ -1,0 +1,173 @@
+/* ======== Reset Básico ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ======== Fondo General ======== */
+body {
+    background: linear-gradient(to right, #9c9d9e, #8f9090); /* azul oscuro */
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ======== Contenedor Principal ======== */
+.wrapper {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.main-card {
+    background: #ffffff;
+    color: #000;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    animation: fadeIn 0.7s ease;
+}
+
+/* ======== Títulos ======== */
+h1, h2, h4 {
+    color: #0d1b2a;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    border-bottom: 3px solid #1b98e0; /* azul brillante */
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* ======== Mensajes ======== */
+.mensaje {
+    background: #1b98e0;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ======== Botón de Logout ======== */
+.logout-button {
+    text-decoration: none;
+    background:  #1b98e0;;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.logout-button:hover {
+    background: #166086;
+}
+
+/* ======== Formulario ======== */
+.formulario {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Inputs */
+.formulario input, .formulario textarea {
+    background: #f8f9fa;
+    color: #000;
+}
+
+/* Botón */
+.formulario button {
+    background: #1b98e0;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.formulario button:hover {
+    background: #166086;
+}
+
+/* ======== Lista de Vacantes ======== */
+.vacante ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vacante li {
+    background: #f1f1f1;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border-left: 6px solid #1b98e0;
+    transition: transform 0.2s;
+}
+.vacante li:hover {
+    transform: translateX(5px);
+}
+
+/* galería de imágenes dentro de cada producto/admin */
+.vacante .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+.vacante .galeria img {
+    max-width: 180px;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Enlaces Editar / Eliminar */
+.vacante a {
+    color: #1b98e0;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.vacante a:hover {
+    text-decoration: underline;
+}
+
+/* ======== Postulaciones ======== */
+.postulaciones {
+    background: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.postulante {
+    background: #f8f9fa;
+    border-left: 4px solid #1b98e0;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* ======== Animación ======== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+

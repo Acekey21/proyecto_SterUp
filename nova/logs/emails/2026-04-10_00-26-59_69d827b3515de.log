@@ -1,0 +1,208 @@
+================================================================================
+EMAIL CAPTURADO EN MODO DEMO
+================================================================================
+Fecha: 1775773619.1844 | Timestamp: 1775773619
+Hora legible: {date('Y-m-d H:i:s')}
+
+DE: {MAIL_FROM_ADDRESS} ({MAIL_FROM_NAME})
+PARA: cesarsaucedo123456789@gmail.com
+ASUNTO: Confirma tu Email - StepUp
+
+OPCIONES:
+array (
+  'text_body' => 'Hola cesar,
+
+¡Bienvenido a StepUp! 
+
+Para completar tu registro, necesitas verificar tu email. Haz clic en el siguiente enlace:
+
+http://localhost/StepUp/nova/api/verify_email.php?token=821b5120ac3f5919a025aa001bbbeeeebf25655a812af9bd7d52aa8352790728
+
+Este enlace expirará en 1440 minutos.
+
+Si no creaste esta cuenta, ignora este email.
+
+Saludos,
+StepUp Team',
+)
+
+================================================================================
+CUERPO HTML:
+================================================================================
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .verification-box {
+            background-color: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .verification-link {
+            display: inline-block;
+            background-color: #667eea;
+            color: white;
+            padding: 14px 40px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            margin: 15px 0;
+            transition: background-color 0.3s;
+        }
+        .verification-link:hover {
+            background-color: #5568d3;
+        }
+        .link-text {
+            font-size: 12px;
+            color: #666;
+            margin-top: 15px;
+            word-break: break-all;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .expiry-notice {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #856404;
+        }
+        .security-info {
+            background-color: #e7f3ff;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #004085;
+        }
+        .footer {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+            font-size: 12px;
+            color: #666;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        strong {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎉 ¡Bienvenido a StepUp!</h1>
+        </div>
+        
+        <div class="content">
+            <p class="greeting">Hola <strong>cesar</strong>,</p>
+            
+            <p>Gracias por registrarte en StepUp. Para completar tu registro y activar tu cuenta, necesitas verificar tu dirección de email.</p>
+            
+            <div class="verification-box">
+                <p style="margin: 0 0 15px 0; font-weight: 600;">Haz clic en el botón para verificar tu email:</p>
+                <a href="http://localhost/StepUp/nova/api/verify_email.php?token=821b5120ac3f5919a025aa001bbbeeeebf25655a812af9bd7d52aa8352790728" class="verification-link">✓ Verificar Email</a>
+                <p style="margin: 15px 0 0 0; font-size: 12px; color: #666;">Enlace de verificación</p>
+            </div>
+            
+            <p style="text-align: center; color: #999; margin: 20px 0;">— o —</p>
+            
+            <p style="text-align: center; font-size: 12px; color: #666;">Si el botón anterior no funciona, copia y pega este enlace en tu navegador:</p>
+            
+            <div class="link-text">
+                http://localhost/StepUp/nova/api/verify_email.php?token=821b5120ac3f5919a025aa001bbbeeeebf25655a812af9bd7d52aa8352790728
+            </div>
+            
+            <div class="expiry-notice">
+                ⏰ <strong>Importante:</strong> Este enlace de verificación expirará en 24 horas. Si el enlace expira, puedes solicitar un nuevo correo desde la página de login.
+            </div>
+            
+            <div class="security-info">
+                🔒 <strong>Información de seguridad:</strong> Si no creaste esta cuenta, por favor ignora este email. No se ha utilizado ningún método de pago ni datos personales.
+            </div>
+            
+            <p>Una vez verifiques tu email, podrás acceder a todas las funciones de StepUp:</p>
+            <ul style="margin-left: 20px; color: #555;">
+                <li>Crear y gestionar tu perfil</li>
+                <li>Acceso a ofertas de trabajo</li>
+                <li>Postularte a vacantes</li>
+                <li>Protección de datos de seguridad avanzada</li>
+            </ul>
+            
+            <p style="margin-top: 25px;">¿Preguntas? Contáctanos en: <strong>soporte@stepup.local</strong></p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 StepUp. Todos los derechos reservados.</p>
+            <p>Este es un email automatizado, no respondas a este mensaje.</p>
+            <p>Timestamp: 10/04/2026 00:26:59 | Token: 821b5120ac3f591...</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+================================================================================
+CUERPO TEXTO PLANO:
+================================================================================
+Hola cesar,
+
+¡Bienvenido a StepUp! 
+
+Para completar tu registro, necesitas verificar tu email. Haz clic en el siguiente enlace:
+
+http://localhost/StepUp/nova/api/verify_email.php?token=821b5120ac3f5919a025aa001bbbeeeebf25655a812af9bd7d52aa8352790728
+
+Este enlace expirará en 1440 minutos.
+
+Si no creaste esta cuenta, ignora este email.
+
+Saludos,
+StepUp Team
+
+================================================================================

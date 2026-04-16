@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa; /* Gris muy claro */
+    color: #222; /* Gris oscuro para texto */
+    padding: 40px 15px;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 640px;
+    margin: auto;
+}
+
+.main-card {
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px; /* Menos redondeado para aspecto formal */
+    padding: 40px 45px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e0e6ed;
+}
+
+h1 {
+    color: #0a2540; /* Azul oscuro */
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #2952a3;
+    padding-bottom: 10px;
+}
+
+/* Mensajes */
+.mensaje {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #0a2540; /* Azul oscuro más serio */
+    background-color: #e8f0fa; /* Azul muy suave */
+    padding: 14px 20px;
+    border-left: 5px solid #2952a3;
+    border-radius: 6px;
+}
+
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fafafa;
+    color: #222;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #2952a3; /* Azul fuerte */
+    outline: none;
+    box-shadow: 0 0 6px rgba(41, 82, 163, 0.4);
+}
+
+/* Botón */
+.formulario button {
+    background-color: #2952a3; /* Azul fuerte */
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 14px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(41, 82, 163, 0.35);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.formulario button:hover {
+    background-color: #1f3a6a; /* Azul más oscuro */
+    transform: translateY(-1px);
+}
+
+/* Link volver */
+.volver {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.volver a {
+    color: #0a2540;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.volver a:hover {
+    color: #2952a3;
+    text-decoration: underline;
+}

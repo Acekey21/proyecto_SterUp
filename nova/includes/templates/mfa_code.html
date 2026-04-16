@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .code-box {
+            background-color: #f0f0f0;
+            border: 2px dashed #667eea;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .code {
+            font-size: 36px;
+            font-weight: bold;
+            color: #667eea;
+            letter-spacing: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        .expiry {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        .info {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        .footer {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+        .timestamp {
+            color: #999;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔐 Código de Verificación</h1>
+        </div>
+        
+        <div class="content">
+            <p class="greeting">¡Hola {{nombre}}!</p>
+            
+            <p>Tu código de verificación para acceder a <strong>StepUp</strong> es:</p>
+            
+            <div class="code-box">
+                <div class="code">{{codigo}}</div>
+                <div class="expiry">⏱️ Expira en {{expiry_minutes}} minutos</div>
+            </div>
+            
+            <div class="info">
+                ℹ️ <strong>Nota de seguridad:</strong> Nunca compartas este código con nadie. Si no solicitaste este código, ignora este email.
+            </div>
+            
+            <p style="color: #666; font-size: 13px;">
+                Si tienes problemas con el acceso, contacta a nuestro equipo de soporte.
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p style="margin: 0 0 10px 0;">© 2026 StepUp - Sistema de Autenticación</p>
+            <p class="timestamp" style="margin: 0;">{{timestamp}}</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "require": {
+        "mpdf/mpdf": "^6.1",
+        "firebase/php-jwt": "^7.0",
+        "phpmailer/phpmailer": "^7.0",
+        "google/apiclient": "^2.15"
+    }
+}

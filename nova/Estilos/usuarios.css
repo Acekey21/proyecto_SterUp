@@ -1,0 +1,352 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #222;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Barra superior */
+.top-nav {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 18px 40px;
+    font-weight: 600;
+    font-size: 0.95em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+.top-nav a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.top-nav a:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Título principal */
+h1 {
+    color: white;
+    font-weight: 700;
+    margin: 40px auto 30px auto;
+    text-align: center;
+    font-size: 2.2em;
+    max-width: 1200px;
+    padding: 0 20px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: -0.5px;
+}
+
+/* Formulario de búsqueda */
+form {
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    padding: 0 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+form input,
+form select,
+form button {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+form button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Contenedor general de vacantes/productos */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 28px;
+    max-width: 1400px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+}
+
+/* Cada tarjeta de producto/vacante */
+.vacante {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    transition: all 0.4s ease;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.vacante::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.vacante:hover {
+    box-shadow: 0 20px 50px rgba(102, 126, 234, 0.25);
+    transform: translateY(-8px);
+    border-color: #667eea;
+}
+
+.vacante img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.vacante h2 {
+    color: #667eea;
+    font-size: 1.4em;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.vacante h3 {
+    color: #764ba2;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.vacante p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-size: 0.95em;
+}
+
+.vacante-marca {
+    font-size: 0.85em;
+    color: #999;
+    margin-bottom: 16px;
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* Botón Agregar/Postular */
+.btn-postular {
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+    font-size: 0.95em;
+    user-select: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-postular:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btn-postular:active {
+    transform: translateY(-1px);
+}
+
+/* Galería de imágenes para productos */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.galeria img {
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    border-color: #667eea;
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+}
+
+.thumb-prod {
+    max-width: 80px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumb-prod:hover {
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    .top-nav {
+        padding: 12px 20px;
+        font-size: 0.85em;
+        gap: 15px;
+    }
+
+    .top-nav a {
+        padding: 6px 12px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+        margin: 30px auto 20px auto;
+    }
+
+    form {
+        margin: 0 auto 20px auto;
+        padding: 15px;
+    }
+
+    form input,
+    form select,
+    form button {
+        padding: 10px 12px;
+        font-size: 0.9em;
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 16px;
+        padding: 0 15px;
+        margin: 0 auto 30px auto;
+    }
+
+    .vacante {
+        padding: 16px;
+    }
+
+    .vacante img {
+        height: 150px;
+        margin-bottom: 12px;
+    }
+
+    .vacante h2 {
+        font-size: 1.1em;
+    }
+
+    .vacante h3 {
+        font-size: 0.95em;
+    }
+
+    .btn-postular {
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+
+    .top-nav {
+        padding: 10px 15px;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 1.3em;
+        padding: 0 15px;
+    }
+
+    form {
+        margin: 15px auto;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form input,
+    form select,
+    form button {
+        width: 100%;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .galeria {
+        gap: 6px;
+    }
+
+    .galeria img {
+        max-width: 70px;
+        height: 70px;
+    }
+}
+
