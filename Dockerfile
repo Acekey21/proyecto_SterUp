@@ -10,8 +10,8 @@ RUN a2enmod rewrite
 # Copiamos todos los archivos de tu proyecto al servidor
 COPY . /var/www/html/
 
-# Le decimos a Apache que la carpeta principal es /nova
-ENV APACHE_DOCUMENT_ROOT /var/www/html/nova
+# Configuramos Apache Document Root
+ENV APACHE_DOCUMENT_ROOT=/var/www/html/nova
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
