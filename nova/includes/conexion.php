@@ -1,7 +1,7 @@
 <?php
 $host = 'mysql';
 $port = 5432;
-$user = 'your_username'; // Change this accordingly
+$user = 'stepupdb_6u4l_user'; // Change this accordingly
 $pass = 'dWlkdXgm4Dlm2NNanKE7EtuGTvNgqbpQ';
 $dbname = 'stepupdb_6u4l'; // Change this accordingly
 
