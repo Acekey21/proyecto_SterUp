@@ -1,9 +1,9 @@
 <?php
-$host = '127.0.0.1';
-$db = 'stepupdb';
-$user = 'root';
-$pass = '';
-$port = 3307;
+$host = 'mysql';
+$port = 3306;
+$user = 'your_username'; // Change this accordingly
+$pass = 'example';
+$dbname = 'your_database'; // Change this accordingly
 
 $conn = new mysqli($host, $user, $pass, $db, $port);
 
